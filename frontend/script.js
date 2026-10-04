@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:5000";
+const API_URL = "https://quotely-api-3rk4.onrender.com";
 
 const quoteText = document.getElementById("quoteText");
 const quoteAuthor = document.getElementById("quoteAuthor");
