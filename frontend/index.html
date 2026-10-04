@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Quotely — Find Your Words</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+
+  <nav>
+    <div class="logo">
+      quote<span>ly.</span>
+    </div>
+
+    <button class="nav-favourites" onclick="scrollToFavourites()">
+      ♥ <span>Favourites</span>
+      <span id="favCount" class="fav-count">0</span>
+    </button>
+  </nav>
+
+  <main>
+
+    <section class="hero">
+
+      <div class="eyebrow">
+        <span class="pulse"></span>
+        RANDOM WISDOM
+      </div>
+
+      <div id="quoteCard" class="quote-card">
+
+        <div class="quote-mark">“</div>
+
+        <blockquote id="quoteText">
+          Loading something worth remembering...
+        </blockquote>
+
+        <div class="quote-info">
+          <div>
+            <p class="written-by">WRITTEN BY</p>
+            <h3 id="quoteAuthor">—</h3>
+          </div>
+
+          <span id="quoteTopic" class="topic">General</span>
+        </div>
+
+      </div>
+
+      <div class="actions">
+
+        <button id="newQuoteBtn" class="primary-btn">
+          <span>New Quote</span>
+          <span class="arrow">↗</span>
+        </button>
+
+        <button id="favouriteBtn" class="icon-btn" title="Save favourite">
+          ♡
+        </button>
+
+        <button id="copyBtn" class="icon-btn" title="Copy quote">
+          ⧉
+        </button>
+
+      </div>
+
+      <p id="statusMessage" class="status-message"></p>
+
+    </section>
+
+    <section id="favouritesSection" class="favourites-section">
+
+      <div class="section-heading">
+        <div>
+          <p class="section-label">YOUR COLLECTION</p>
+          <h2>Words worth keeping.</h2>
+        </div>
+
+        <p class="section-description">
+          A little corner for the thoughts that stayed with you.
+        </p>
+      </div>
+
+      <div id="favouritesGrid" class="favourites-grid"></div>
+
+      <div id="emptyState" class="empty-state">
+        <div>♡</div>
+        <h3>Nothing here yet.</h3>
+        <p>When a quote hits different, save it.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>QUOTELY</span>
+    <p>Built for words that matter.</p>
+    <span>2026</span>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
